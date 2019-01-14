@@ -1,0 +1,62 @@
+def number(year,month,day):
+         b=31
+         s=30
+         r2=29
+         nr2=28
+         if (year%4==0 and year%100!=0 or year%400==0): #判断是否为闰年
+                  if(month==1):
+                           print("这是%d年的%d天"%(year,day))
+                  if(month==2):
+                           print("这是%d年的%d天"%(year,day+b))
+                  if(month==3):
+                           print("这是%d年的%d天"%(year,day+b+r2))
+                  if(month==4):
+                           print("这是%d年的%d天"%(year,day+b+r2+b))
+                  if(month==5):
+                           print("这是%d年的%d天"%(year,day+b+r2+b+s))
+                  if(month==6):
+                            print("这是%d年的%d天"%(year,day+b+r2+b+s+b))
+                  if(month==7):
+                           print("这是%d年的%d天"%(year,day+b+r2+b+s+b+s))
+                  if(month==8):
+                           print("这是%d年的%d天"%(year,day+b+r2+b+s+b+s+b))
+                  if(month==9):
+                           print("这是%d年的%d天"%(year,day+b+r2+b+s+b+s+b+b))
+                  if(month==10):
+                           print("这是%d年的%d天"%(year,day+b+r2+b+s+b+s+b+b+s))
+                  if(month==11):
+                           print("这是%d年的%d天"%(year,day+b+r2+b+s+b+s+b+b+s+b))
+                  if(month==12):
+                           print("这是%d年的%d天"%(year,day+b+r2+b+s+b+s+b+b+s+b+s))
+         else:
+                  if(month==1):
+                           print("这是%d年的%d天"%(year,day))
+                  if(month==2):
+                           print("这是%d年的%d天"%(year,day+b))
+                  if(month==3):
+                           print("这是%d年的%d天"%(year,day+b+nr2))
+                  if(month==4):
+                           print("这是%d年的%d天"%(year,day+b+nr2+b))
+                  if(month==5):
+                           print("这是%d年的%d天"%(year,day+b+nr2+b+s))
+                  if(month==6):
+                            print("这是%d年的%d天"%(year,day+b+nr2+b+s+b))
+                  if(month==7):
+                           print("这是%d年的%d天"%(year,day+b+nr2+b+s+b+s))
+                  if(month==8):
+                           print("这是%d年的%d天"%(year,day+b+nr2+b+s+b+s+b))
+                  if(month==9):
+                           print("这是%d年的%d天"%(year,day+b+nr2+b+s+b+s+b+b))
+                  if(month==10):
+                           print("这是%d年的%d天"%(year,day+b+nr2+b+s+b+s+b+b+s))
+                  if(month==11):
+                           print("这是%d年的%d天"%(year,day+b+nr2+b+s+b+s+b+b+s+b))
+                  if(month==12):
+                           print("这是%d年的%d天"%(year,day+b+nr2+b+s+b+s+b+b+s+b+s))
+
+
+
+year=int(input("请输入年份："))
+month=int(input("请输入月份："))
+day=int(input("请输入日期："))
+number(year,month,day)
